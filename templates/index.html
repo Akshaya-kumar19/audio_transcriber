@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>Whisper Transcription Service</h1>
-    <form action="/transcribe" method="POST">
-        <label for="audio_path">Audio Path:</label>
-        <input type="text" id="audio_path" name="audio_path" required>
+    <form action="/transcribe" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload Audio File:</label>
+        <input type="file" id="file" name="file" accept="audio/*" required>
         <button type="submit">Transcribe and Download</button>
     </form>
 </body>
